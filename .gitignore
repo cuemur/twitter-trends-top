@@ -1,4 +1,4 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# Ignored files
 
 # dependencies
 /node_modules
@@ -9,6 +9,7 @@
 # production
 /build
 /public
+/dist
 
 # misc
 .DS_Store
