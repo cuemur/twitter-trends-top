@@ -1,0 +1,79 @@
+.trends {
+  background-color: #f4f4f4;
+
+  .content {
+    min-height: 100vh;
+    padding-top:10%;
+    background-size: cover;
+
+    .trend-block {
+      margin: 0px auto;
+      width: 960px;
+      text-align: center;
+
+      .trend-btn {
+        background: #0091ff;
+        background-image: linear-gradient(to bottom, #0091ff, #0099c7);
+        -webkit-border-radius: 5;
+        -moz-border-radius: 5;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        font-family: Arial;
+        margin-top: 45px;
+        border: none;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 14px 44px;
+        text-decoration: none;
+      }
+      
+
+    }
+    .heading-top {
+      font-size: 14px;
+      color:darkgrey;
+      text-transform: uppercase;
+    }
+    .heading-bottom {
+      color:black;
+      line-height: 70px;
+      font-size:36px;
+      margin-bottom:15px;
+      font-weight: 700;
+
+    }
+    .trend {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: center;
+      flex-direction: row;
+
+      .hashtag {
+        font-size:20px;
+        font-weight: 500;
+        color:#0080ff;
+      }
+      .hits {
+        font-size:12px;
+        color: grey;
+        line-height: 0px;
+        letter-spacing: 2px;
+      }
+      .trend-item {
+        background-color:white;
+        width: 170px;
+        padding:10px;
+        margin:10px;
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 47px -13px rgba(0,0,0,0.15);
+        text-align: center;
+        line-height: 53px;
+      }
+
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $bgColor;
+}
+
+.container {
+  background: url("http://localhost:3333/static/assets/img/bg.jpg");
+  min-height: 100vh;
+  padding-top:10%;
+  background-size: cover;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}

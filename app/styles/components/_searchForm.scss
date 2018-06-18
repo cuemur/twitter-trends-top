@@ -1,0 +1,81 @@
+
+/* Search form */
+/* I didnt provide media queries , it wasn't asked, so it wont be responsive. */
+
+.title {
+  color: $white;
+  font-size: 2vw;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.search-block {
+  width: $search_size;
+  margin: 0px auto;
+  height: auto;
+  animation: fadein 4s;
+
+  label {
+      text-transform: uppercase;
+      color: $white;
+      font-size: 0.6vw;
+      opacity: 0.6;
+  }
+  .search {
+      width: 100%;
+      border-radius: 8px;
+      outline: none;
+      display: block;
+      cursor: pointer;
+      z-index: 1;
+      border: none;
+      color: grey;
+      margin-top:5px;
+      padding: 14px 50px 14px 25px;
+      background-color: $white;
+  }
+
+  .button {
+      visibility: hidden;
+  }
+
+  .search-icon {
+      background: url('http://localhost:3333/static/assets/img/icons/search.svg');
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: block;
+      right: 13px;
+      top: -35px;
+      float: right;
+      background-size: 24px 24px;
+  }
+}
+
+/* End of search form */
+
+/* Search dropdown */
+
+.pac-container {
+  margin-top:5px;
+  font-size:14px;
+
+  .pac-item {
+      padding:5px 10px;
+
+      .pac-matched {
+          float:left;
+      }
+      span:nth-child(3) {
+          float:right;
+      }
+      .pac-icon {
+          display: none;
+      }
+  }
+}
+.pac-logo:after {
+  display:none;
+}
+
+/* End of search dropdown */
