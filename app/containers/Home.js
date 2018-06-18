@@ -6,7 +6,6 @@ import { getTrendsList, resetTrendsState } from 'redux/actions/tweets';
 
 import SearchForm from 'components/SearchForm';
 import TrendList from 'components/TweetList';
-import Loading from 'components/Loading';
 
 
 class Home extends Component {
@@ -17,7 +16,7 @@ class Home extends Component {
 	}
 
 	handleSearch( search ) {
-		const { getTrendsList } = this.props;
+		const { getTrendsList, resetTrendsState, getUserList } = this.props;
 		getTrendsList( search );
 	}
 
@@ -31,7 +30,6 @@ class Home extends Component {
 					onHandleSearch={ this.handleSearch }
 					/>
 				{ <div className="content">
-					{ userList.isLoading && <Loading /> }
 					{ !trendCheck && <TrendList trendList={ trendList.trends } isLoading={ trendList.isLoading }/> }
 				</div> }
 			</section>
@@ -51,6 +49,7 @@ Home.propTypes = {
 const mapStateToProps = ( state ) => {
 	return {
 		trendList: state.trendList,
+		userList: state.userList,
 	}
 }
 

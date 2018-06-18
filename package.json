@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open | node server.js",
-    "jw": "webpack-dev-server --open", 
+    "jw": "webpack-dev-server --open",
     "build": "NODE_ENV='production' webpack -p",
     "api-server": "node server.js"
   },
