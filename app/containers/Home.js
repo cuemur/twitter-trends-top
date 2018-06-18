@@ -17,9 +17,8 @@ class Home extends Component {
 	}
 
 	handleSearch( search ) {
-		const { getTrendsList, resetTrendsState, getUserList } = this.props;
+		const { getTrendsList } = this.props;
 		getTrendsList( search );
-		getUserList( search );
 	}
 
 	render () {
@@ -52,7 +51,6 @@ Home.propTypes = {
 const mapStateToProps = ( state ) => {
 	return {
 		trendList: state.trendList,
-		userList: state.userList,
 	}
 }
 
