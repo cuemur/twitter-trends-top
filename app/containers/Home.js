@@ -7,7 +7,6 @@ import { getTrendsList, resetTrendsState } from 'redux/actions/tweets';
 import SearchForm from 'components/SearchForm';
 import TrendList from 'components/TweetList';
 
-
 class Home extends Component {
 	constructor() {
 		super();
