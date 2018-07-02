@@ -20,5 +20,3 @@ This application use:
 * Redux
 * Twitter API
 * Woeid converter
-
-Made for Weststein.
